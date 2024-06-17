@@ -1,11 +1,18 @@
-
-const CelebrityListItem = (props) => {
+import './index.css'
+const CelebrityListItem = ({data}) => {
     return(
-        
-        props.map((item ) => {
-
-        <><p>`Name : ${item.name}`</p><p>`Job : ${item.job}`</p><p>`Country: ${item.country}`</p><p>`Age: ${item.age}`</p><p>`Net Worth: ${item.netWorth}`</p></>
-        })
+        <div className="celebrity-section">
+            <div className="celebrity-name">
+                <p>{data.name}</p>
+            </div>
+            <div className="celebrity-details">
+                <p><span className="details-heading">Job:</span> {data.job}</p>
+                <p><span className="details-heading">Country:</span> {data.country}</p>
+                <p><span className="details-heading">Age:</span> {data.age}</p>
+                <p><span className="details-heading">Net Worth:</span> {data.netWorth}</p>
+            </div>
+        </div>
+       
         
     )
 }
