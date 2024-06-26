@@ -1,13 +1,9 @@
-import {useState} from "react"
 import CelebrityListItem from "../Components/CelebrityListItem/CelebrityListItem"
 import AddACelebrity from "../Components/AddACelebrity/AddACelebrity"
-import './index.css'
+import styles from './styles.module.css'
+
 const CelebrityList = () => {
-    const [name, setname]=useState('')
-    const [job, setJob]=useState('')
-    const [country, setCountry]=useState('')
-    const [age, setAge]=useState('')
-    const [netWorth, setNetWorth]=useState('')
+   
 
 
 
@@ -36,16 +32,10 @@ const CelebrityList = () => {
     ]
  return (
     <>
-        <div className="myForm">
-            <AddACelebrity
-            name={name}
-            job={job}
-            country={country}
-            age={age}
-            networth={netWorth}
-            />
+        <div className={styles.myForm}>
+            <AddACelebrity/>
         </div>
-        <div className="container">
+        <div className={styles.container}>
             {data.map((celebrity, index) => (
                 <CelebrityListItem key={index} data={celebrity} />
             ))}

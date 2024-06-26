@@ -1,0 +1,13 @@
+.submitBtn{
+    text-align: center;
+}
+
+.formInput{
+ margin-bottom: 1rem
+}
+
+.formError{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
