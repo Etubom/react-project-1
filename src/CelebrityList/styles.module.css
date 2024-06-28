@@ -1,8 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
 .myForm{
     display: flex;
     justify-content: center;
 }
-.container{
-    display: flex;
-    justify-content: space-evenly;
+.submitBtn{
+    text-align: center;
+}
+
+.formInput{
+ margin-bottom: 1rem
+}
+
+.formError{
+    background-color: red;
+    color: white;
+    text-align: center;
 }
