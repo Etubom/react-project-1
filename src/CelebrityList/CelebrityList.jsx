@@ -50,7 +50,6 @@ const CelebrityList = () => {
                 netWorth: ""
             })
             setFailedValidation(false)
-           // setSubmitting(isSubmitting=> !isSubmitting)
             setSubmitting(true)
         }
         
