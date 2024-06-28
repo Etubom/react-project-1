@@ -13,12 +13,14 @@ const CelebrityList = () => {
         age: "",
         netWorth: ""
     });
-
+    const [isSubmitting,setSubmitting] = useState(false)
     const [data, setData] = useState(jsonData)
 
     const handleChange = (event) =>{
         const { name, value } = event.target;
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+        setFailedValidation(false)
+        setSubmitting(false)
     }
 
     const checkFormData = (formObject) => {
@@ -47,6 +49,8 @@ const CelebrityList = () => {
                 age: "",
                 netWorth: ""
             })
+            setFailedValidation(false)
+            setSubmitting(true)
         }
         
     }
@@ -105,7 +109,7 @@ const CelebrityList = () => {
             />
              <br/>
              <div className={styles.submitBtn}>
-                <button type="submit">{"Add User"}</button>
+                <button disabled={isSubmitting} type="submit">{"Add User"}</button>
              </div>
             {
             failedValidation && !formData.name && 
