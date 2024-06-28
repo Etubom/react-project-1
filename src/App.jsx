@@ -1,10 +1,9 @@
-import CelebrityList from "./CelebrityList/CelebrityList"
+import CelebrityList from './CelebrityList/CelebrityList'
 
 function App() {
-
   return (
     <>
-    <CelebrityList/>
+      <CelebrityList />
     </>
   )
 }
