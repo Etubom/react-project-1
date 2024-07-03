@@ -21,5 +21,4 @@ const CelebrityListItem = ({ data }) => {
     </div>
   )
 }
-
 export default CelebrityListItem
