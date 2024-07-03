@@ -1,0 +1,11 @@
+.myForm {
+  display: flex;
+  justify-content: center;
+}
+.submitBtn {
+  text-align: center;
+}
+
+.formInput {
+  margin-bottom: 1rem;
+}

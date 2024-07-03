@@ -1,0 +1,13 @@
+.celebritySection {
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+.celebrityName {
+  text-align: end;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.detailsHeading {
+  font-weight: bold;
+}
