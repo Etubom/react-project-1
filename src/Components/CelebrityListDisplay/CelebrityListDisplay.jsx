@@ -5,7 +5,6 @@ import { CelebrityContext } from '../../Context/CelebrityProvider'
 
 const CelebrityListDisplay = () => {
   const { data } = useContext(CelebrityContext)
-  console.log('data within celeb display is ', data)
   return (
     <div className={styles.container}>
       {data?.map((celebrity, index) => (
