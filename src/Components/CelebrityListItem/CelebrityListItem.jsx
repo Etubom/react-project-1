@@ -1,9 +1,6 @@
-import { useContext } from 'react'
 import styles from './styles.module.css'
-import { CelebrityContext } from '../../Context/CelebrityProvider'
 
-const CelebrityListItem = () => {
-  const { data } = useContext(CelebrityContext)
+const CelebrityListItem = ({ data }) => {
   return (
     <div className={styles.celebritySection}>
       <div className={styles.celebrityName}>
