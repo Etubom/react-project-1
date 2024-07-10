@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+
 const CelebrityListItem = ({ data }) => {
   return (
     <div className={styles.celebritySection}>
@@ -6,7 +7,7 @@ const CelebrityListItem = ({ data }) => {
         <p>{data.name}</p>
       </div>
       <p>
-        <span className={styles.detailsHeading}>Job:</span> {data.job}
+        <span className={styles.detailsHeading}>Job:</span> {data?.job}
       </p>
       <p>
         <span className={styles.detailsHeading}>Country:</span> {data.country}

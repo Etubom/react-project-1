@@ -1,6 +1,9 @@
+import { useContext } from 'react'
 import styles from './styles.module.css'
+import { CelebrityContext } from '../../Context/CelebrityProvider'
 
-const FormError = ({ formData, failedValidation }) => {
+const FormError = () => {
+  const { formData, failedValidation } = useContext(CelebrityContext)
   return (
     <>
       {failedValidation && !formData.name && (

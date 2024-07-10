@@ -1,13 +1,16 @@
+import { useContext } from 'react'
 import FormError from '../FormError/FormError'
 import styles from './styles.module.css'
+import { CelebrityContext } from '../../Context/CelebrityProvider'
 
-const CelebrityForm = ({
-  formData,
-  handleChange,
-  handleSubmit,
-  failedValidation,
-  isSubmitting,
-}) => {
+const CelebrityForm = () => {
+  const {
+    formData,
+    handleChange,
+    handleSubmit,
+    failedValidation,
+    isSubmitting,
+  } = useContext(CelebrityContext)
   return (
     <div className={styles.myForm}>
       <form onSubmit={handleSubmit}>
